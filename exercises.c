@@ -60,7 +60,6 @@ retorne la suma de sus elementos.
 
 int sumaLista(List *L) {
    int suma = 0;
-
    int *elemento = (int *) first(L);
    while (elemento != NULL)
    {
@@ -80,7 +79,11 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
+   int total = get_size(L);
+   for (int i = 1 ; i <= total ; i++)
+   {
+      if (i = elem) popCurrent(L);
+   }
 }
 
 /*
