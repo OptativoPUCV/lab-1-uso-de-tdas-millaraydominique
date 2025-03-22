@@ -276,3 +276,19 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8987721
+Sat, Mar 22, 2025  8:49:39 PM: 
+ exercises.c | 17 +++++++++++++----
+ 1 file changed, 13 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:131:21: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+          push(pila, '(');
+                     ^~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+03b4c06
