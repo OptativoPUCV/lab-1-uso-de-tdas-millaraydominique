@@ -128,11 +128,14 @@ int parentesisBalanceados(char *cadena) {
    {
       if (cadena[i] == '(')
       {
-         push(pila, '(');
+         char *parentesis = malloc(sizeof(char));
+         *parentesis = '(';
+         push(pila, parentesis);
       }
       if (cadena[i] == ')')
       {
          if (top(pila) == NULL) return 0;
+         free(top(pila));
          pop(pila);
       }
    }
