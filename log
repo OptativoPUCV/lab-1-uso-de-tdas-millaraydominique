@@ -24,3 +24,18 @@ Sat, Mar 22, 2025  2:21:44 PM:
  tests:  1|4
 total_score: 10/70
 bae6ca4
+Sat, Mar 22, 2025  2:47:46 PM: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:66:15: error: dereferencing 'void *' pointer [-Werror]
+       suma += *elemento;
+               ^~~~~~~~~
+exercises.c:66:15: error: void value not ignored as it ought to be
+exercises.c:67:13: error: unused variable 'elemento' [-Werror=unused-variable]
+       void* elemento = next(L);
+             ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b775444
