@@ -243,3 +243,17 @@ Sat, Mar 22, 2025  7:42:02 PM:
  tests:  4|1
 total_score: 50/70
 a86015a
+Sat, Mar 22, 2025  7:58:22 PM: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:126:18: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+    Stack *pila = create_stack;
+                  ^~~~~~~~~~~~
+exercises.c:126:11: error: unused variable 'pila' [-Werror=unused-variable]
+    Stack *pila = create_stack;
+           ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+34eafce
