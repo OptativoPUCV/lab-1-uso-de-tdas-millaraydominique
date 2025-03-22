@@ -109,3 +109,14 @@ exercises.c:62:8: error: unused variable 'total' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1ad65d9
+Sat, Mar 22, 2025  5:50:55 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:68:12: error: unused variable 'elemento' [-Werror=unused-variable]
+       int *elemento = (int *) next(L);
+            ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6c65540
