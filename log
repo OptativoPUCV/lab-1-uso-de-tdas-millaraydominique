@@ -223,3 +223,17 @@ Sat, Mar 22, 2025  7:19:29 PM:
  tests:  3|2
 total_score: 40/70
 a1c7063
+Sat, Mar 22, 2025  7:40:25 PM: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:103:19: error: comparison between pointer and integer [-Werror]
+    while (top(P1) != -1) {
+                   ^~
+exercises.c:109:25: error: comparison between pointer and integer [-Werror]
+    while (top(auxiliar) != -1) {
+                         ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+319a98b
