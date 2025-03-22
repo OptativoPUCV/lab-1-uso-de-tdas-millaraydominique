@@ -60,12 +60,12 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    int suma = 0;
    int total = get_size(L);
+   int *elemento = (int *) first(L);
    for (int i = 1 ; i < total ; i++)
    {
-      int *elemento = (int *) first(L);
       suma += *elemento;
-      int *elemento = (int *) next(L);
    }
+   int *elemento = (int *) next(L);
    return suma;
 }
 
