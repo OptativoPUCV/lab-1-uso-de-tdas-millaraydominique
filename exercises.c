@@ -82,7 +82,7 @@ void eliminaElementos(List*L, int elem){
    int total = get_size(L);
    for (int i = 1 ; i <= total ; i++)
    {
-      if (i = elem) popCurrent(L);
+      if (i == elem) popCurrent(L);
    }
 }
 

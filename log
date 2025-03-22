@@ -159,3 +159,9 @@ exercises.c:85:7: error: suggest parentheses around assignment used as truth val
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4a01b3e
+Sat, Mar 22, 2025  6:14:14 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|3
+total_score: 20/70
+7d04ba8
