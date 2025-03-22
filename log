@@ -165,3 +165,14 @@ Sat, Mar 22, 2025  6:14:14 PM:
  tests:  2|3
 total_score: 20/70
 7d04ba8
+Sat, Mar 22, 2025  6:24:07 PM: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:83:20: error: comparison between pointer and integer [-Werror]
+    while (elemento == elem)
+                    ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8a5bf65
