@@ -298,3 +298,9 @@ Sat, Mar 22, 2025  8:59:48 PM:
  tests:  7|1
 total_score: 60/70
 2d6f5ec
+Sat, Mar 22, 2025  9:09:43 PM: 
+ exercises.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+ tests:  7|1
+total_score: 60/70
+d2de6af
