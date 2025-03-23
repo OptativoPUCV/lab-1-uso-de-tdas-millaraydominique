@@ -304,3 +304,19 @@ Sat, Mar 22, 2025  9:09:43 PM:
  tests:  7|1
 total_score: 60/70
 d2de6af
+Sat, Mar 22, 2025  9:14:22 PM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:129:61: error: comparison between pointer and integer [-Werror]
+       if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == "{")
+                                                             ^~
+exercises.c:129:61: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:135:61: error: comparison between pointer and integer [-Werror]
+       if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == "}")
+                                                             ^~
+exercises.c:135:61: error: comparison with string literal results in unspecified behavior [-Werror=address]
+cc1.exe: all warnings being treated as errors
+Compilation failed
+aa87240
