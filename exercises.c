@@ -136,12 +136,13 @@ int parentesisBalanceados(char *cadena) {
          if (top(pila) == NULL) return 0;
          char *tope = (char *) top(pila);
          if ((cadena[i] == ')' && *tope != '(') ||
-         (cadena[i] == ']' && *tope != '[') ||
-         (cadena[i] == '}' && *tope != '{'))
-         return 0;
+            (cadena[i] == ']' && *tope != '[') ||
+            (cadena[i] == '}' && *tope != '{')) {
+            return 0;
+         }
+         free(top(pila));
+         pop(pila);
       }
-      free(top(pila));
-      pop(pila);
    }
 
    while (top(pila) != NULL)
