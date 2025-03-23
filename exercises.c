@@ -146,10 +146,9 @@ int parentesisBalanceados(char *cadena) {
    while (top(pila) != NULL) {
       free(top(pila));
       pop(pila);
-      //return 0;
+      return 0;
    }
-   //return 1;
-   return (top(pila) == NULL);
+   return 1;
 
    return 0;
 }
